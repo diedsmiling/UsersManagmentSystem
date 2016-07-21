@@ -2,3 +2,14 @@
   font-weight: bold;
   text-decoration: underline;
 }
+.link{
+  display: inline-block;
+  color: white;
+  text-decoration: none;
+  font-weight: 200;
+  transform: scale(1);
+  transition: all ease-out .5s;
+  &:active{
+    transform: scale(1.1);
+  }
+}

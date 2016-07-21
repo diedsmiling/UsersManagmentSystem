@@ -1,0 +1,30 @@
+.delete-user{
+  color: #e74c3c;
+  transition: all .1s ease;
+  &:active{
+    transform: scale(1.2);
+  }
+  transform: scale(1);
+}
+:global
+.list-item{
+
+  &__enter{
+    opacity: 0;
+    max-height: 0;
+  }
+  &__enter-active{
+    transition: opacity .4s ease .2s, max-height .5s ease;
+    opacity: 1;
+    max-height: 500px;
+  }
+  &__leave{
+    opacity: 1;
+    max-height: 500px;
+  }
+  &__leave-active{
+    transition: opacity .3s ease, max-height .3s ease;
+    max-height: 0px;
+    opacity: 0;
+  }
+}

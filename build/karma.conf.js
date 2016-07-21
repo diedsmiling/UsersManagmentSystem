@@ -9,6 +9,7 @@ debug('Create configuration.')
 const karmaConfig = {
   basePath: '../', // project root in relation to bin/karma.js
   files: [
+    'node_modules/whatwg-fetch/fetch.js',
     {
       pattern: `./${config.dir_test}/test-bundler.js`,
       watched: false,
@@ -24,6 +25,9 @@ const karmaConfig = {
   },
   browsers: ['PhantomJS'],
   webpack: {
+    node: {
+      fs: 'empty'
+    },
     devtool: 'cheap-module-source-map',
     resolve: {
       ...webpackConfig.resolve,

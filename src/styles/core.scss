@@ -13,8 +13,15 @@
     margin: 0;
     padding: 0;
     height: 100%;
+    font-family: Roboto, sans-serif;
+    font-weight: 200;
+    color: #3d4252;
   }
-
+#root{
+  [type=button]{
+    -webkit-appearance: none
+  }
+}
   *,
   *:before,
   *:after {

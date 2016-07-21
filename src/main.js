@@ -5,6 +5,10 @@ import { useRouterHistory } from 'react-router'
 import { syncHistoryWithStore } from 'react-router-redux'
 import createStore from './store/createStore'
 import AppContainer from './containers/AppContainer'
+import injectTapEventPlugin from 'react-tap-event-plugin'
+import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider'
+
+injectTapEventPlugin()
 
 // ========================================================
 // Browser History Setup
@@ -29,11 +33,11 @@ const history = syncHistoryWithStore(browserHistory, store, {
 // ========================================================
 // Developer Tools Setup
 // ========================================================
-if (__DEBUG__) {
-  if (window.devToolsExtension) {
-    window.devToolsExtension.open()
-  }
-}
+//if (__DEBUG__) {
+//  if (window.devToolsExtension) {
+//    window.devToolsExtension.open()
+//  }
+//}
 
 // ========================================================
 // Render Setup
@@ -42,14 +46,15 @@ const MOUNT_NODE = document.getElementById('root')
 
 let render = (routerKey = null) => {
   const routes = require('./routes/index').default(store)
-
   ReactDOM.render(
-    <AppContainer
-      store={store}
-      history={history}
-      routes={routes}
-      routerKey={routerKey}
-    />,
+    <MuiThemeProvider>
+      <AppContainer
+        store={store}
+        history={history}
+        routes={routes}
+        routerKey={routerKey}
+      />
+    </MuiThemeProvider>,
     MOUNT_NODE
   )
 }
