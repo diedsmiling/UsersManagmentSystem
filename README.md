@@ -23,6 +23,7 @@ Enjoy!
 
 ## Some remarks
 
+* Beacause API server is deployd to herouku and is a free application, it goes asleep after 30 minutes of inactivity. So you might need to wait some time after first reqeust for api server to awake. 
 * Due to time limits, tests don't cover whole code. Have written them just to show the techinques I use.
  
 
