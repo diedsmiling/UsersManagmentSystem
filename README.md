@@ -1,6 +1,6 @@
 # Users Management System
 
-React-Redux application for simple users manegement control. 
+React-Redux application for simple users manegement control. Used this starter kit: https://github.com/davezuko/react-redux-starter-kit
 
 ## API
 
