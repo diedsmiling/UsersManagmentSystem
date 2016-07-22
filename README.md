@@ -4,7 +4,7 @@ React-Redux application for simple users manegement control.
 
 ## API
 
-API server is written on `node.js` / `koa` framework   (https://github.com/diedsmiling/ums_api) is deployed to `heroku`, so you don't need to install it: https://nameless-tundra-42195.herokuapp.com.  
+API server is written on `node.js` / `koa` (https://github.com/diedsmiling/ums_api) is deployed to `heroku`, so you don't need to install it: https://nameless-tundra-42195.herokuapp.com. `CORS` headers are set for enpoint requests.  
 
 ## Requirements
 * node `^4.2.0`
@@ -18,7 +18,7 @@ $ cd react-redux-starter-kit
 $ npm install                   # Install project dependencies
 $ npm start                     # Compile and launch
 ```
-Open in the browser: http://localhost:3000
+Open in the browser: `http://localhost:3000`
 Enjoy!
 
 ## Some remarks
