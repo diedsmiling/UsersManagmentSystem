@@ -34,4 +34,5 @@ Enjoy!
 * Material UI spams all over `Unknown props` warnings. In `0.15.2` release they will be gone.
 * Didn't handle all requests stages, didn't show any spinners while they are being executed
 * Some components might be devided into smaller ones, but had to hurry up, because of time limits
-* Some duplicated code could be avoided but had to hurry up due to time limits. My perfectionism is disadvanteged. 
+* Some duplicated code could be avoided but had to hurry up due to time limits. My perfectionism is disadvanteged.
+* Didn't unse normalizr for storing nested apis. Used lodash `findIndex` for data retrieving from stores. 
